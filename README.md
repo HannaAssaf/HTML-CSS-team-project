@@ -1,28 +1,40 @@
 # Vyshyvanka Vibes
 
-The purpose of this project was to create a front-end template based on the
+A sleek, responsive front-end template for an e-commerce site celebrating
+Ukrainian embroidery ("vyshyvanka"), faithfully translated from a Figma design
+into semantic HTML, modern CSS, and vanilla JavaScript.
 [Figma layout.](https://www.figma.com/file/jX7XBtk88w2TeFQZztcGFe/Vyshyvanka-Vibes?node-id=0%253A1&mode=dev 'link to the layout')
 
-## Used technologies
+## Project Overview
 
-- HTML5
-- CSS3
-- JS
-- Vite
+The web application is divided into the following sections:
 
-## Team
+- **Hero**: a full-width banner with a call-to-action
+- **About**: information about the brand and its mission
+- **Collection**: showcase of available vyshyvanka models
+- **Order**: order form with input validation
+- **Testimonials**: customer reviews
 
-- [Alter-White](https://github.com/Alter-White 'link to the GitHub profile') //
-  Team Lead
-- [HannaAssaf](https://github.com/HannaAssaf 'link to the GitHub profile') //
-  Scrum Master and developer of the "Your order" section
-- [DSojat](https://github.com/DSojat 'link to the GitHub profile') // Developer
-  of the "Hero" section
-- [larisanangu](https://github.com/larisanangu 'link to the GitHub profile') //
-  Developer of the "About Us" section
-- [Lyudmyla13P](https://github.com/Lyudmyla13P 'link to the GitHub profile') //
-  Developer of the "Our collection" section
-- [ziablyck](https://github.com/ziablyck 'link to the GitHub profile') //
-  Developer of the "Testimonials" section
-- [dimentiygg](https://github.com/dimentiygg 'link to the GitHub profile') //
-  Developer of the "Footer" section
+The site is built using pure HTML, CSS, and JavaScript. Custom `<load>` tags are
+used to include partial HTML files from the `./partials/` directory.
+
+## My Role
+
+- **Scrum Master**:
+  - Facilitated daily stand-ups and sprint planning
+  - Managed the product backlog and task board using
+    [Trello](https://trello.com/)
+- **Order Section Developer**:
+  - Implemented the order form markup and styling
+  - Added validation for all input fields (name, email)
+  - Displayed inline error messages and success confirmation
+  - Logged collected form data to the console using JavaScript
+
+## Technologies Used
+
+- **Vite** (build tool)
+- **HTML5**
+- **CSS3** (Modern Normalize)
+- **Google Fonts** (DM Sans, Manrope)
+- **JavaScript** (ES6 modules)
+- **Trello** (task management)
