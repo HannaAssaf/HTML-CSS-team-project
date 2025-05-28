@@ -1,128 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/HTML-CSS-team-project/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/HTML-CSS-team-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/HTML-CSS-team-project/assets/styles-DvPDDfy5.css">
-  </head>
-  <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/HTML-CSS-team-project/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/HTML-CSS-team-project/assets/favicon-BBgpa7P_.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vyshyvanka Vibes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Manrope:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <script type="module" crossorigin src="/HTML-CSS-team-project/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/HTML-CSS-team-project/assets/index-DV59BBYd.css">
+</head>
+
+<body>
+  <header class="header">
+  <div class="container header-container">
+    <nav class="header-navigation"> 
+        <a class="header-logo" href="./index.html">
+        <img class="logo-image" 
+        src="/HTML-CSS-team-project/assets/logo-C0tCtrhW.svg" 
+        alt="vyshyvanka logo" width="44">
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+      <ul class="header-menu">
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#about-us">About us</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#collection">Our collection</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#your-order">Customer order</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#testimonials">Testimonials</a>
         </li>
       </ul>
     </nav>
+
+    <div class="header-social-btn-wrapper">
+    <address class="header-contacts">
+      <a class="header-phone" href="tel:+380684439426">
+        +380 (68) 443-94-26</a>
+    </address>      
+      <ul class="header-social-list">
+        <li class="header-social-item">
+          <a class="header-social-link" href="https://www.facebook.com/goITclub/">
+            <svg class="header-social-icon" width="28" height="28" aria-label="facebook icon">
+              <use href="/HTML-CSS-team-project/assets/icons-Dacymjl3.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a class="header-social-link" href="https://www.instagram.com/goitclub/">
+            <svg class="header-social-icon" width="28" height="28" aria-label="instagram icon">
+              <use href="/HTML-CSS-team-project/assets/icons-Dacymjl3.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a class="header-social-link " href="https://www.youtube.com/c/GoIT">
+            <svg class="header-social-icon" width="28" height="28" aria-label="youtube icon">
+              <use href="/HTML-CSS-team-project/assets/icons-Dacymjl3.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <button class="burger-menu-btn" type="button" data-modal-open>
+        <svg class="burger-icon" width="36" height="24">
+          <use href="/HTML-CSS-team-project/assets/icons-Dacymjl3.svg#icon-nav"></use>
+        </svg>
+      </button>
+    </div>
+
   </div>
 </header>
 
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/HTML-CSS-team-project/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+<!-- CURTAIN -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="overlay">
+  <div class="overlay-container">
+    <div class="overlay-first-row">
+      <address class="overlay-contacts">
+        <a class="overlay-phone" href="tel:+380684439426">
+          +380 (68) 443-94-26</a>
+      </address>
+      <button class="close-button"
+      data-modal-close 
+      type="button">
+        <svg class="close-button-icon" width="36" height="36" aria-label="modal close button">
+          <use href="/HTML-CSS-team-project/assets/icons-Dacymjl3.svg#icon-close"></use>
+        </svg>
+      </button>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+    <nav class="overlay-nav">
+      <ul class="overlay-menu">
+        <li class="overlay-menu-item">
+          <a class="overlay-menu-link" href="./index.html#about-us">About us</a>
+        </li>
+        <li class="overlay-menu-item">
+          <a class="overlay-menu-link" href="./index.html#collection">Our collection</a>
+        </li>
+        <li class="overlay-menu-item">
+          <a class="overlay-menu-link" href="./index.html#your-order">Customer order</a>
+        </li>
+        <li class="overlay-menu-item">
+          <a class="overlay-menu-link" href="./index.html#testimonials">Testimonials</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="overlay-background">    
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<script>
+  (() => {
+      const refs = {
+        openModalBtn: document.querySelector("[data-modal-open]"),
+        closeModalBtn: document.querySelector("[data-modal-close]"),
+        modal: document.querySelector("[data-modal]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      function toggleModal() {
+        refs.modal.classList.toggle("is-hidden");
+      }
+    })();
+</script>
+  <main>
+    <section class="hero container section">
+  <div class="hero-wrapper">
+    <div class="hero-title-image-wrapper">
+      <div class="hero-title-box">
+        <h1 class="hero-title">
+          Reviving the traditional
+          <span class="hero-title-span">Ukrainian</span>
+          artistry in every stitch.
+        </h1>
+        <a class="hero-anchor" href="#your-order" aria-label="Order button"
+          >Order
+          <svg class="hero-icon-arrow" width="26">
+            <use href="/HTML-CSS-team-project/assets/icons-Dacymjl3.svg#icon-arrow"></use>
+          </svg>
+        </a>
+        <svg class="hero-star-shine" width="52" height="51">
+          <use href="/HTML-CSS-team-project/assets/icons-Dacymjl3.svg#icon-star"></use>
+        </svg>
+      </div>
+      <img
+        class="hero-image-main"
+        srcset="/HTML-CSS-team-project/assets/hero1-mobile-B2M7xkFr.jpg 335w, /HTML-CSS-team-project/assets/hero1-tablet-DgR0Q2gs.jpg 413w, /HTML-CSS-team-project/assets/hero1-desktop1440-1280-DcEJ581q.jpg 392w, /HTML-CSS-team-project/assets/hero1-mobile@2x-DKQTPSsb.jpg 670w, /HTML-CSS-team-project/assets/hero1-tablet@2x-Di67yMOG.jpg 826w, /HTML-CSS-team-project/assets/hero1-desktop1440-1280@2x-BPlnSFOP.jpg 784w"
+        sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px, (max-width: 767px) 335px"
+        src="/HTML-CSS-team-project/assets/hero1-mobile-B2M7xkFr.jpg"
+        alt="Girl in traditional Ukrainian vyshyvanka"
+        width="335"
+        height="545"
+      />
+    </div>
+    <div class="hero-star-box">
+      <svg class="hero-star-icon" width="52" height="51">
+        <use href="/HTML-CSS-team-project/assets/icons-Dacymjl3.svg#icon-star"></use>
+      </svg>
+      <p class="hero-star-text">all embroidery is made by hand</p>
+    </div>
+    <img
+      class="hero-image-second"
+      srcset="/HTML-CSS-team-project/assets/hero2-tablet-C_XpXICj.png 1x, /HTML-CSS-team-project/assets/hero2-tablet@2x-CaM7e_er.png 2x"
+      src="/HTML-CSS-team-project/assets/hero2-tablet-C_XpXICj.png"
+      alt="Map of Ukraine"
+      width="139"
+    />
   </div>
 </section>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+    <section class="about section" id="about-us">
+  <div class="container about-cont">
+    <div class="about-text-wrap">
+      <h2 class="about-title">
+        About Us
+      </h2>
+      <p class="about-paragraf-f">
+        The store "Vyshyvanka Vibes" is a place where traditional Ukrainian vyshyvanka comes to life with new zest and style. Our store offers a wide selection of high-quality and authentic embroidery, which combines the elegance of traditional needlework and modern design.
+      </p >
+      <p class="about-paragraf-s">
+        In "Vyshyvanka Vibes" you will find various models of embroidery, from classic to modern, corresponding to the latest fashion trends. Our embroidery is made using natural fabrics and is embroidered by highly qualified craftsmen who convey the beauty of Ukrainian culture in every detail.We believe that vyshyvanka is not just clothing, but a symbol of national pride, the heritage of our ancestors and a way of expressing one's individuality. Each embroidery from "Vyshyvanka Vibes" has its own unique history and symbolism, which gives it a special meaning.
+      </p>
+    </div>
+    <img 
+    class="about-image"    
+    srcset="/HTML-CSS-team-project/assets/about-mobile-DuAXrhun.jpg 335w, /HTML-CSS-team-project/assets/about-tablet-CJtZEtRE.jpg 704w, /HTML-CSS-team-project/assets/about-desktop1280-BL0nqT19.jpg 594w, /HTML-CSS-team-project/assets/about-desktop1440-AZbZ2hYG.jpg 709w, /HTML-CSS-team-project/assets/about-mobile@2x-Ds1wGIvZ.jpg 670w, /HTML-CSS-team-project/assets/about-tablet@2x-DGf7nEtO.jpg 1408w, /HTML-CSS-team-project/assets/about-desktop1280@2x-DyCY2B01.jpg 1188w, /HTML-CSS-team-project/assets/about-desktop1440@2x-DVMXlbPT.jpg 1418w"
+    sizes="(min-width: 1440px) 709px, (min-width: 1280px) 594px, (min-width: 768px) 704px, (max-width: 767px) 335px"
+    src="/HTML-CSS-team-project/assets/about-mobile-DuAXrhun.jpg" 
+    alt="vishivsnka-example"
+    />
+  </div> 
+ </section> 
+    <section class="our-collection section" id="collection">
+  <div class="container vyshyvanka-background">
+    <h2 class="collection">Our collection</h2>
+    <ul class="vyshyvanku">
+      <li class="collection-list">
+        <div class="collection-image">
+          <img
+            srcset="/HTML-CSS-team-project/assets/collection1-mobile-CoM1nrBB.jpg 335w, /HTML-CSS-team-project/assets/collection1-mobile@2x-DZFfaj-4.jpg 670w, /HTML-CSS-team-project/assets/collection1-tablet-DMWYDBrn.jpg 342w, /HTML-CSS-team-project/assets/collection1-tablet@2x-Ui1MzBve.jpg 684w, /HTML-CSS-team-project/assets/collection1-desktop1280-cXup3ukP.jpg 380w, /HTML-CSS-team-project/assets/collection1-desktop1280@2x-859XvMdz.jpg 760w, /HTML-CSS-team-project/assets/collection1-desktop1440-CRyNAgbJ.jpg 400w, /HTML-CSS-team-project/assets/collection1-desktop1440@2x-C1aC1F_z.jpg 800w"
+            sizes="(min-width: 1440px) 400px, (min-width: 1280px) 380px, (min-width: 768px) 342px, (max-width: 767px) 335px"
+            src="/HTML-CSS-team-project/assets/collection1-mobile-CoM1nrBB.jpg"
+            alt="Women's blouse Gorgany"
+          />
+        </div>
+        <div class="vyshyvanka">
+          <h3 class="vyshyvanka-product">AUGUST Poltava women's blouseRING</h3>
+          <p class="price">3300 UAH</p>
+        </div>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+
+      <li class="collection-list">
+        <div class="collection-image">
+          <img
+            srcset="/HTML-CSS-team-project/assets/collection2-mobile-Dv5F2ZCp.jpg 335w, /HTML-CSS-team-project/assets/collection2-mobile@2x-DKYM-qBn.jpg 670w, /HTML-CSS-team-project/assets/collection2-tablet-DalvedCS.jpg 342w, /HTML-CSS-team-project/assets/collection2-tablet@2x-xH50rqjo.jpg 684w, /HTML-CSS-team-project/assets/collection2-desktop1280-C3gnK8qW.jpg 380w, /HTML-CSS-team-project/assets/collection2-desktop1280@2x-Dy1GNqxk.jpg 760w, /HTML-CSS-team-project/assets/collection2-desktop1440-d6cIu817.jpg 400w, /HTML-CSS-team-project/assets/collection2-desktop1440@2x-DT66XJx1.jpg 800w"
+            sizes="(min-width: 1440px) 400px, (min-width: 1280px) 380px, (min-width: 768px) 342px, (max-width: 767px) 335px"
+            src="/HTML-CSS-team-project/assets/collection2-mobile-Dv5F2ZCp.jpg"
+            alt="Women's blouse Gorgany"
+          />
+        </div>
+        <div class="vyshyvanka">
+          <h3 class="vyshyvanka-product">Women's blouse Gorgany</h3>
+          <p class="price">3350 UAH</p>
+        </div>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+      <li class="collection-list">
+        <div class="collection-image">
+          <img
+            srcset="/HTML-CSS-team-project/assets/collection3-mobile-DHKe1qbF.jpg 335w, /HTML-CSS-team-project/assets/collection3-mobile@2x-By8ZioAk.jpg 670w, /HTML-CSS-team-project/assets/collection3-tablet-CDbiw3kQ.jpg 342w, /HTML-CSS-team-project/assets/collection3-tablet@2x-INc-zage.jpg 684w, /HTML-CSS-team-project/assets/collection3-desktop1280-DsPSiwsC.jpg 380w, /HTML-CSS-team-project/assets/collection3-desktop1280@2x-D7HoHlxG.jpg 760w, /HTML-CSS-team-project/assets/collection3-desktop1440-B3DDNJbw.jpg 400w, /HTML-CSS-team-project/assets/collection3-desktop1440@2x-Ce_yci8E.jpg 800w"
+            sizes="(min-width: 1440px) 400px, (min-width: 1280px) 380px, (min-width: 768px) 342px, (max-width: 767px) 335px"
+            src="/HTML-CSS-team-project/assets/collection3-mobile-DHKe1qbF.jpg"
+            alt="Women's blouse Crimea"
+          />
+        </div>
+        <div class="vyshyvanka">
+          <h3 class="vyshyvanka-product">Women's blouse Crimea</h3>
+          <p class="price">4000 UAH</p>
+        </div>
+      </li>
+      <li class="collection-list">
+        <div class="collection-image">
+          <img
+            srcset="/HTML-CSS-team-project/assets/collection4-mobile-CihIAOpQ.jpg 335w, /HTML-CSS-team-project/assets/collection4-mobile@2x-D_uodvYh.jpg 670w, /HTML-CSS-team-project/assets/collection4-tablet-BQ2xFP3R.jpg 342w, /HTML-CSS-team-project/assets/collection4-tablet@2x-_adKDhnt.jpg 684w, /HTML-CSS-team-project/assets/collection4-desktop1280-cHOI7mxu.jpg 380w, /HTML-CSS-team-project/assets/collection4-desktop1280@2x-WOT24j8N.jpg 760w, /HTML-CSS-team-project/assets/collection4-desktop1440-DrTU4j6L.jpg 400w, /HTML-CSS-team-project/assets/collection4-desktop1440@2x-DqkBL9Fh.jpg 800w"
+            sizes="(min-width: 1440px) 400px, (min-width: 1280px) 380px, (min-width: 768px) 342px, (max-width: 767px) 335px"
+            src="/HTML-CSS-team-project/assets/collection4-mobile-CihIAOpQ.jpg"
+            alt="Men's shirt Verkhovina"
+          />
+        </div>
+        <div class="vyshyvanka">
+          <h3 class="vyshyvanka-product">Men's shirt Verkhovina</h3>
+          <p class="price">3100 UAH</p>
+        </div>
+      </li>
+      <li class="collection-list">
+        <div class="collection-image">
+          <img
+            srcset="/HTML-CSS-team-project/assets/collection5-mobile-DQ5dwJ9d.jpg 335w, /HTML-CSS-team-project/assets/collection5-mobile@2x-tB2cVuy3.jpg 670w, /HTML-CSS-team-project/assets/collection5-tablet-Bw8KFHgQ.jpg 342w, /HTML-CSS-team-project/assets/collection5-tablet@2x-C2puQAVu.jpg 684w, /HTML-CSS-team-project/assets/collection5-desktop1280-CtYnBRtq.jpg 380w, /HTML-CSS-team-project/assets/collection5-desktop1280@2x-CGvpid5U.jpg 760w, /HTML-CSS-team-project/assets/collection5-desktop1440-DMSoYDv-.jpg 400w, /HTML-CSS-team-project/assets/collection5-desktop1440@2x-BVKJNJZP.jpg 800w"
+            sizes="(min-width: 1440px) 400px, (min-width: 1280px) 380px, (min-width: 768px) 342px, (max-width: 767px) 335px"
+            src="/HTML-CSS-team-project/assets/collection5-mobile-DQ5dwJ9d.jpg"
+            alt="Mountain men's shirt"
+          />
+        </div>
+        <div class="vyshyvanka">
+          <h3 class="vyshyvanka-product">Mountain men's shirt</h3>
+          <p class="price">3300 UAH</p>
+        </div>
+      </li>
+      <li class="collection-list">
+        <div class="collection-image">
+          <img
+            srcset="/HTML-CSS-team-project/assets/collection6-mobile-vKz1bsZY.jpg 335w, /HTML-CSS-team-project/assets/collection6-mobile@2x-Dm7q9Pet.jpg 670w, /HTML-CSS-team-project/assets/collection6-tablet-DnE-mMZh.jpg 342w, /HTML-CSS-team-project/assets/collection6-tablet@2x-C78FUMjc.jpg 684w, /HTML-CSS-team-project/assets/collection6-desktop1280-Ck_3apH0.jpg 380w, /HTML-CSS-team-project/assets/collection6-desktop1280@2x-DXE86IP9.jpg 760w, /HTML-CSS-team-project/assets/collection6-desktop1440-DtoEFTkU.jpg 400w, /HTML-CSS-team-project/assets/collection6-desktop1440@2x-DztFApbA.jpg 800w"
+            sizes="(min-width: 1440px) 400px, (min-width: 1280px) 380px, (min-width: 768px) 342px, (max-width: 767px) 335px"
+            src="/HTML-CSS-team-project/assets/collection6-mobile-vKz1bsZY.jpg"
+            alt="Men's shirt Yasen"
+          />
+        </div>
+        <div class="vyshyvanka">
+          <h3 class="vyshyvanka-product">Men's shirt Yasen</h3>
+          <p class="price">1700 UAH</p>
+        </div>
       </li>
     </ul>
   </div>
-</article>
+</section>
 
-    </main>
+    <section class="order section" id="your-order">
+  <div class="order-background"></div>
+  <div class="order-field container">
+    <div class="order-form-send">
+      <h2 class="order-form-description">
+        <span class="order-span">Your order</span> is our priority: Personalized
+        approach and quality of service
+      </h2>
+      <form class="order-form" id="order-sent-show">
+        <div class="order-form-wrapper">
+          <label class="order-form-label visually-hidden" for="user-name">
+            Enter your full name
+          </label>
+          <input
+            class="order-form-field"
+            type="text"
+            name="user-name"
+            id="user-name"
+            required
+            maxlength="50"
+            pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐйЙʼ]{1,50}"
+            placeholder="Enter your full name"
+            title="Olena"
+          />
+        </div>
+        <div class="order-form-wrapper">
+          <label class="order-form-label visually-hidden" for="user-email">
+            Enter your email
+          </label>
+          <input
+            class="order-form-field"
+            type="email"
+            name="user_email"
+            id="user-email"
+            required
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="order-form-wrapper">
+          <label class="order-form-label visually-hidden" for="user-comment">
+            Comments
+          </label>
+          <textarea
+            class="order-form-messege"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Comments"
+          ></textarea>
+        </div>
+        <button class="order-form-btn" type="submit">
+          send
+          <svg class="order-form-btn-icon" width="26">
+            <use href="/HTML-CSS-team-project/assets/icons-Dacymjl3.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="order-images-container">
+      <div class="order-vyshyvanka-img">
+        <img
+          class="order-img"
+          srcset="/HTML-CSS-team-project/assets/order-tablet-2ziHQR7n.jpg 638w, /HTML-CSS-team-project/assets/order-tablet@2x-BlDK7FdS.jpg 1276w, /HTML-CSS-team-project/assets/order-desktop1440-1280-DsJ0E0tD.jpg 524w, /HTML-CSS-team-project/assets/order-desktop1440-1280@2x-3WUrmNCL.jpg 1048w"
+          sizes="(min-width: 1280px) 524px, (min-width: 768px) 638px"
+          src="/HTML-CSS-team-project/assets/order-tablet-2ziHQR7n.jpg"
+          alt="White vyshyvanka"
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer class="footer">
+    <section class="section-testimonials section">
+  <div class="container-section-testimonials container">
+    <h2 class="testimonials-title" id="testimonials">Testimonials</h2>
+    <ul class="testimonials-list">
+      <li class="testimonials-item first-review">
+        <div class="testimonials-icon-box">
+          <img
+            srcset="/HTML-CSS-team-project/assets/testimonials1@2x-CiDOA5PA.png 2x"
+            src="/HTML-CSS-team-project/assets/testimonials1-DWdLfyol.png"
+            alt="maria-tkachuk-photo"
+            width="64"
+            height="64"
+          />
+        </div>
+        <div class="testimonials-review-box">
+          <h3 class="testimonials-review-title">Maria Tkachuk</h3>
+          <p class="testimonials-review-text">
+            I was pleasantly surprised by the variety of embroidery offered by
+            Vyshyvanka Vibes. They have models for every taste - from classic to
+            modern. I bought an embroidered dress to celebrate a special
+            occasion and received impeccable service and refinement in every
+            detail.
+          </p>
+        </div>
+      </li>
+      <li class="testimonials-item second-review">
+        <div class="testimonials-icon-box">
+          <img
+            srcset="/HTML-CSS-team-project/assets/testimonials2@2x-B3mRf3oi.png 2x"
+            src="/HTML-CSS-team-project/assets/testimonials2-tiZFJ3ZF.png"
+            alt="sergey-rybachok-photo"
+            width="64"
+            height="64"
+          />
+        </div>
+        <div class="testimonials-review-box">
+          <h3 class="testimonials-review-title">Sergey Rybachok</h3>
+          <p class="testimonials-review-text">
+            Vyshyvanka Vibes exceeds all my expectations! Their vyshyvanka are
+            simply masterpieces! I fell in love with the quality of the
+            materials and the skill of the artisans behind each product. This is
+            my favorite embroidery shop where I always find
+            <br class="new-line" />
+            something special and unique.
+          </p>
+        </div>
+      </li>
+      <li class="testimonials-item third-review">
+        <div class="testimonials-icon-box">
+          <img
+            srcset="/HTML-CSS-team-project/assets/testimonials3@2x-CLv8miXH.png 2x"
+            src="/HTML-CSS-team-project/assets/testimonials3-B2xtMH0t.png"
+            alt="natalia-chatuk-photo"
+            width="64"
+            height="64"
+          />
+        </div>
+        <div class="testimonials-review-box">
+          <h3 class="testimonials-review-title">Natalia Chatuk</h3>
+          <p class="testimonials-review-text">
+            Vyshyvanka Vibes is a real find for everyone who appreciates
+            Ukrainian culture. Their embroidery reflects the spirit and
+            traditions of our people. I not only buy embroidered shirts for
+            myself, but also give them to my friends abroad as a symbol of our
+            beauty and national pride.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  </main>
+  <footer class="page-footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
+    <ul class="footer-menu">
+      <li class="footer-menu-item">
+        <a class="footer-menu-item-link" href="#about-us">about us</a>
+      </li>
+      <li class="footer-menu-item">
+        <a class="footer-menu-item-link" href="#your-order">customer order</a>
+      </li>
+      <li class="footer-menu-item">
+        <a class="footer-menu-item-link" href="#collection">our collection</a>
+      </li>
+      <li class="footer-menu-item">
+        <a class="footer-menu-item-link" href="#testimonials">testimonials</a>
+      </li>
+    </ul>
+    <p class="footer-text">
+      A touch of <span class="footer-text-span">Ukrainian</span> culture in
+      every embroidery
     </p>
+    <div class="background-image"></div>
   </div>
 </footer>
 
 
-  </body>
+</body>
+
 </html>
